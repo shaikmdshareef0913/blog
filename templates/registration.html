@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.pexels.com/photos/2162442/pexels-photo-2162442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.5); /* dark transparent background */
+            color: white; /* text color */
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none; /* remove border */
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.2); /* dark transparent background for input */
+            color: white; /* text color */
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none; /* remove focus outline */
+        }
+        button[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>REGISTRATION</h1><br>
+    <form method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" id="username" placeholder="Username" required><br>
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="text" name="mobile" id="mobile"  placeholder="Mobile" required><br>
+        <label for="email">Email ID:</label><br>
+        <input type="email" name="email" id="email" placeholder="Email" required><br>
+        <label for="address">Address:</label><br>
+        <input type="text" name="address" id="address" placeholder="Address" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" placeholder="Password" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

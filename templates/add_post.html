@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image:url('https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: white; /* Text color */
+            background-color: transparent; /* Transparent background */
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        h1 {
+            text-align: center;
+            color: white; /* Text color */
+        }
+    </style>
+</head>
+<body>
+    <h1>POSTS</h1>
+    <form method="POST">
+        <label for="title" style="color: white;">Title:</label><br> <!-- Set label text color to white -->
+        <input name="title" type="text" placeholder="Title"><br>
+        <label for="content" style="color: white;">Content:</label><br> <!-- Set label text color to white -->
+        <input name="content" type="text" placeholder="Content"><br>
+        <label for="slug" style="color: white;">Slug:</label><br> <!-- Set label text color to white -->
+        <input name="slug" type="text" placeholder="Slug"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
