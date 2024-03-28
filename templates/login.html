@@ -3,29 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title><style>
-       form {
-               padding: 30px;
-               border: solid;
-               max-width: 300px;
-               max-height: 400px;
-       }
-       body{
-             background-image:url('https://images.unsplash.com/photo-1557360798-c91519105dd7?q=80&w=1333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1557360798-c91519105dd7?q=80&w=1333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
-       }
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* Align elements vertically */
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color:black;
+            text-align: center;
+            margin-top: 50px; /* Adjust the margin-top as needed */
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.5); /* dark transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        label {
+            display: block;
+            color: white;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.7); /* light transparent background */
+        }
+        button[type="login"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+        button[type="login"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
-<body><center>
-    <h1>LOGIN
-    </h1><form method="POST">
-    <lable for="">username:</lable><br>
-    <input type="text" name="username"><br>
-    <lable for="">password:</lable><br>
-    <input type="password" name="password"><br><br>
-    <button type="login">login</button>
-</form>
-</center>
-    
+<body>
+    <h1>LOGIN</h1>
+    <form method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <button type="login">Login</button>
+    </form>
 </body>
 </html>
+
